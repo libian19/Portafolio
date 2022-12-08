@@ -3,8 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap'); 
 
-
-
 html{
     box-sizing: border-box;
     font-size: 62.5%;
@@ -16,15 +14,33 @@ body{
     font-size: 16px;
 }
 
+a{
+    font-family: 'Mukta', sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    color: black; 
+    align-self: center;
+}
+
+h1, h2, h4{
+    text-align: center;
+    margin: 10px
+}
+
+p{
+    font-family: 'Mukta', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
 .header--container{
     display: flex;
     justify-content: space-around;
 }
 
-h4{
-    margin: 10px
-}
-ul{
+.header--container-link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,16 +48,6 @@ ul{
     font-size: 1.6rem;
 }
 
-a{
-    padding: 10px;
-    text-decoration: none;
-    color: black; 
-}
-
-
-p{
-    font-family: 'Mukta', sans-serif;
-}
 .link-opciones{
     list-style: none;
     margin: 5px;
@@ -54,12 +60,30 @@ p{
     cursor: pointer;
     background-color: cadetblue;
 }
+
 .body--conteiner{
     width: 90%;
     margin: auto;
 
+
 }
 
+.saludo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.body--saludo-mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.body--img{
+    width: 200px;
+}
 
 .mensaje{
     background-color: rgb(216, 179, 185);
@@ -73,11 +97,66 @@ p{
     padding: 10px;
 }
 
-.footer--container{
-    justify-content: center;
+.opciones-continuar{
+    display: flex;
+
+}
+.opciones-continuar a{
+    display: flex;   
 }
 
+.opciones-continuar a:hover{
+    cursor: pointer;
+    color:rgb(216, 179, 185);
+    box-shadow: 5px 5px 5px cadetblue;
+}
 
+.footer--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+   
+}
+.footer--container-redes{
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0; 
+}
+
+/*Estilos para proyectos*/
+
+.body--proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 80%;
+    height: 80wh;
+   
+}
+.proyectos--info-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+   
+}
+.proyectos-img{
+    width: 150px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px;
+    background-color: bisque;
+}
+.proyectos--detalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 
 
