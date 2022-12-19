@@ -15,7 +15,7 @@ body{
 
 a{
     font-family: 'Mukta', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     padding: 10px;
     text-decoration: none;
     color: black; 
@@ -208,7 +208,10 @@ ul{
 .proyectos--detalle-link span{
     font-size: 2.2rem;
     margin-top: 20px;
-
+}
+.novedades{
+    margin-right: auto;
+    padding: 0 50px 50px;
 }
 
 @media (min-width: 380px){
