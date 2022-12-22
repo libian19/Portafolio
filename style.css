@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap'); 
 
 :root{
-    --font-size-titulos: 3.6rem;
-    --font-size-subtitulos: 2.6rem;
-    --font-size-textos: 1.6rem;
+    --font-size-titulos: 3.2rem;
+    --font-size-subtitulos: 2.2rem;
+    --font-size-textos: 1.4rem;
 }
 
 
@@ -218,6 +218,12 @@ ul{
 .novedades{
     margin-right: auto;
     padding: 0 50px;
+}
+.enlaces{
+    color:cadetblue;
+}
+.enlaces:hover{
+    text-decoration: underline;
 }
 
 @media (min-width: 380px){
