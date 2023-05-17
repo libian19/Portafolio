@@ -6,7 +6,7 @@
 :root{
     --font-size-titulos: 3.2rem;
     --font-size-subtitulos: 2.2rem;
-    --font-size-textos: 1.4rem;
+    --font-size-textos: 1.6rem;
 }
 
 
@@ -25,7 +25,7 @@ a{
     font-size: var(--font-size-textos);
     padding: 10px;
     text-decoration: none;
-    color: black; 
+    color: #3d1c00; 
     align-self: center;
 }
 
@@ -66,6 +66,10 @@ ul{
     background-color: bisque;
     border-radius: 15px;
 }
+.link-opciones a:visited{
+    color: rgb(255, 76, 106);
+}
+
 
 .link-opciones:hover{
     cursor: pointer;
@@ -73,7 +77,7 @@ ul{
 }
 
 .inactivo{
-    background-color: grey;
+    background-color: cadetblue;
 }
 
 .inactivo:hover{
@@ -85,8 +89,6 @@ ul{
     width: 90%;
     margin: 24px auto;
     text-align: center;
-
-
 }
 
 .saludo{
@@ -96,7 +98,6 @@ ul{
     align-items: center;
     margin: auto;
     gap: 0;
-      
 }
 
 .body--saludo-mensaje{
@@ -141,7 +142,7 @@ ul{
 
 .opciones-continuar a:hover{
     cursor: pointer;
-    color:rgb(216, 179, 185);
+    color: cadetblue;
     box-shadow: 5px 5px 5px cadetblue;
 }
 
@@ -197,7 +198,9 @@ ul{
     width: 250px;
     border-radius: 20px;
     box-shadow: 10px 10px 15px;
-    background-color: bisque;
+}
+.proyectos-img:hover {
+    transform: scale(1.1);
 }
 .proyectos--detalle{
     display: flex;
@@ -206,11 +209,13 @@ ul{
     align-items: center;
     text-align: center;
 }
+
 .proyectos--detalle-link{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .proyectos--detalle-link span{
     font-size: var(--font-size-textos);
     margin-top: 20px;
@@ -220,7 +225,7 @@ ul{
     padding: 0 50px;
 }
 .enlaces{
-    color:cadetblue;
+    color:#3d1c00;
 }
 .enlaces:hover{
     text-decoration: underline;
