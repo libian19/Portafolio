@@ -18,6 +18,7 @@ html{
 
 body{
     background-color: rgb(216, 179, 185, 0.5);
+    min-width: 430px;
 }
 
 a{
@@ -46,12 +47,25 @@ ul{
     list-style: none;
 }
 
-
 .header--container{
-    text-align-last: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-
+.header--container a{
+    display: flex;
+    justify-content: space-around;
+}
+.header--cover {
+    width: 80%;
+    margin-top: 24px;
+    opacity: 0.4;
+    border-radius: 28px;
+}
 .header--container-link{
+    width: 60vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,18 +247,22 @@ ul{
 
 @media (min-width: 380px){
 
+    .header--container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
     .body--proyectos-intro p{
         font-size: var(--font-size-textos);
     }
 }
 
 @media (min-width: 620px){
-    
     .header--container{
-        display: flex;
-        justify-content: space-around;
+        flex-direction: row;
     } 
-
+    
     .header--container-link{
         font-size: var(--font-size-textos);
     }
@@ -272,6 +290,9 @@ ul{
 }
 
 @media (min-width: 960px){
+    .header--container{
+        justify-content: space-around;
+    } 
     .body--proyectos-container{
         flex-direction: row;
         margin-top: 20px;
