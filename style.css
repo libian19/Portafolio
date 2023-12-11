@@ -6,7 +6,7 @@
 :root{
     --font-size-titulos: 3.2rem;
     --font-size-subtitulos: 2.2rem;
-    --font-size-textos: 1.6rem;
+    --font-size-textos: 1.8rem;
 }
 
 
@@ -41,6 +41,7 @@ h2 {
 
 h4, p{
     font-family: 'Mukta', sans-serif;
+    font-size: var(--font-size-textos);
 }
 
 ul{
@@ -245,6 +246,36 @@ ul{
     text-decoration: underline;
 }
 
+/*Estilos para Mi historia*/
+main{
+    margin: 24px;
+    padding: 24px;
+}
+.container--history{
+    display: grid;
+    grid-template-columns: 50% 5% 45%;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    grid-template-areas: "infancia gap hogar"
+                         "juventud gap fe";
+}
+
+.container--history-infancia{
+    grid-area: infancia;
+    
+}
+.container--history-juventud{
+    grid-area: juventud;
+}
+.container--history-hogar{
+    grid-area: hogar;
+}
+.container--history-fe{
+    grid-area: fe;
+}
+.detail p{
+    text-align: justify;
+}
 @media (min-width: 380px){
 
     .header--container{
