@@ -1,17 +1,21 @@
 const inactivo = document.querySelector('.inactivo')
 const inactive = document.querySelector('#inactive')
+const elemParrafo = document.getElementById("parrafo")
 
-const elemParrafo = document.querySelector('#parrafo').value;
 
-
-/*
 inactive.addEventListener('click', aviso)
 
 function aviso(){
   alert('Lo siento, página en construción :(')
 }
-*/
 
+function toggle(){
+  //elemParrafo.style.display="block";
+  elemParrafo.classList.toggle("hidden")
+ // elemParrafo.classList.add("show")
+}
+
+//Parrafos a 500 caracteres
 function parrafo(elemParrafo){
 let contar = 0;
 let newStr = "";
@@ -23,3 +27,5 @@ let newStr = "";
   }
   return newStr;
 }
+
+
