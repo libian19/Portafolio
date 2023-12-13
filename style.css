@@ -89,15 +89,19 @@ ul{
     background-color: bisque;
     border-radius: 15px;
 }
-.link-opciones a:visited{
-    color: rgb(255, 76, 106);
-}
-
-
 .link-opciones:hover{
     cursor: pointer;
     background-color: cadetblue;
 }
+.link-opciones a:hover{
+    cursor: pointer;
+    color: bisque;
+}
+
+/*.link-opciones a:visited{
+    color: rgb(151, 85, 96);
+}
+*/
 
 .inactivo{
     background-color: cadetblue;
@@ -268,6 +272,10 @@ main{
                          "juventud gap fe";*/
     display: flex;
     flex-direction: column;
+}
+.history-title:hover{
+    cursor: pointer;
+    color: cadetblue;
 }
 
 .container--history-infancia{
